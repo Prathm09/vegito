@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vegito - Farm Fresh Veggies</title>
+  <title>Vegito - Fresh Veggies at Your Doorstep</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,12 +11,13 @@
   <header>
     <h1>Vegito</h1>
     <p>Direct from Local Farms to Your Table</p>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
   </header>
 
   <section class="hero">
     <div class="hero-text">
-      <h2>Farm Fresh. Sustainable. Healthy.</h2>
-      <p>Support local farmers while eating fresh, organic, seasonal veggies.</p>
+      <h2>Organic. Fresh. Fast.</h2>
+      <p>Locally sourced, organic veggies at unbeatable prices. Delivered in hours, not days!</p>
       <a href="#delivery">Get Home Delivery</a>
     </div>
     <div class="hero-img">
@@ -27,10 +28,10 @@
   <section class="features">
     <h3>Why Choose Vegito?</h3>
     <div class="features-grid">
-      <div class="feature"><h4>🌱 100% Organic</h4><p>No harmful chemicals or GMOs.</p></div>
-      <div class="feature"><h4>🚚 Fast Delivery</h4><p>2-hour delivery from nearby farms.</p></div>
-      <div class="feature"><h4>♻️ Eco Packaging</h4><p>Plastic-free & compostable bags.</p></div>
-      <div class="feature"><h4>🌄 Daily Harvest</h4><p>Picked fresh every morning.</p></div>
+      <div class="feature"><h4>100% Organic</h4><p>No harmful chemicals or GMOs.</p></div>
+      <div class="feature"><h4>Fast Delivery</h4><p>2-hour delivery in select zones.</p></div>
+      <div class="feature"><h4>Eco Packaging</h4><p>Plastic-free, compostable bags.</p></div>
+      <div class="feature"><h4>Fresh Daily</h4><p>Harvested fresh each morning.</p></div>
     </div>
   </section>
 
@@ -40,59 +41,30 @@
       <div class="product">
         <img src="image/image1.jpg" alt="Leafy Greens" />
         <h4>Leafy Greens</h4><p>Spinach, kale, lettuce, and more!</p>
+        <button class="add-to-cart" data-product="Leafy Greens" data-price="5.99">Add to Cart</button>
       </div>
       <div class="product">
         <img src="image/image2.jpg" alt="Root Vegetables" />
         <h4>Root Veggies</h4><p>Carrots, beets, radishes, and potatoes.</p>
+        <button class="add-to-cart" data-product="Root Veggies" data-price="4.99">Add to Cart</button>
       </div>
       <div class="product">
         <img src="image/image3.jpg" alt="Fruits" />
         <h4>Fruits</h4><p>Sweet, seasonal & delicious.</p>
+        <button class="add-to-cart" data-product="Fruits" data-price="3.49">Add to Cart</button>
       </div>
       <div class="product">
         <img src="image/image4.jpg" alt="Herbs" />
         <h4>Fresh Herbs</h4><p>Coriander, mint, basil, and more.</p>
-      </div>
-      <div class="product">
-        <img src="image/image5.jpg" alt="Chilies" />
-        <h4>Chilies & Peppers</h4><p>Green, red, and bell peppers.</p>
-      </div>
-      <div class="product">
-        <img src="image/image6.jpg" alt="Baskets" />
-        <h4>Weekly Baskets</h4><p>Pre-packed organic veggie boxes.</p>
+        <button class="add-to-cart" data-product="Herbs" data-price="2.99">Add to Cart</button>
       </div>
     </div>
   </section>
 
   <section class="cart">
-    <h3>🛒 Simple Cart & Checkout</h3>
-    <p>Choose your veggies, click checkout, and that’s it!</p>
-    <a href="#">Start Shopping</a>
-  </section>
-
-  <section class="newsletter">
-    <h3>📬 Stay Updated</h3>
-    <p>Weekly offers, recipes & more straight to your inbox.</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <section class="contact">
-    <h3>📞 Contact Us</h3>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <section class="delivery" id="delivery">
-    <h3>🚚 Home Delivery</h3>
-    <p>We deliver across your city with zero-contact delivery options.</p>
-    <a href="#">Order Now</a>
+    <h3>🛒 Your Cart</h3>
+    <ul id="cartItems"></ul>
+    <button id="checkoutBtn">Checkout</button>
   </section>
 
   <footer>
@@ -100,5 +72,6 @@
     <p>Contact: <a href="mailto:support@vegito.com">support@vegito.com</a></p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
